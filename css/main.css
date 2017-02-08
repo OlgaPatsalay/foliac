@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+    font-family: 'bigjohn';
+    src: url('../fonts/big_john-webfont.woff2') format('woff2'),
+    url('../fonts/big_john-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'slimjoe';
+    src: url('../fonts/slim_joe_1-webfont.woff2') format('woff2'),
+    url('../fonts/slim_joe_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    color: #fff;
+}
+a, a:link, a:hover, a:active, a:visited {
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+button, button:hover, button:focus {
+    border: none;
+    outline: none;
+}
+header {
+    background: url(../images/background-header.jpg) no-repeat;
+    height: 650px;
+    text-align: center;
+    padding-top: 40px;
+}
+.head, .portfolio, .resume-wrap, .contacter, .footer-cont {
+    width: 60%;
+    max-width: 1140px;
+    min-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+header, .about {
+    position: relative;
+	background-position: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+header h1 {
+    font-family: BigJohn, sans-serif;
+    font-size: 45px;
+    margin: 0;
+}
+header h2 {
+    font-family: SlimJoe, sans-serif;
+    font-size: 30px;
+}
+.head button {
+    font: 700 14px Lato, sans-serif;
+    color:  #48bf72;
+    line-height: 25px;
+    text-transform: uppercase;
+    border: 2px solid #48bf72;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    top: 430px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 170px;
+}
+header button:hover, header button:focus {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
+       -moz-box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
+            box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
+}
+.logo {
+    float: left;
+}
+.absolute-centering {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.header {
+    height: 150px;
+    width: 960px;
+}
+nav ul {
+    float: right;
+    font: 700 16px Lato, sans-serif;
+    margin-bottom: 0;
+    margin-top: 32px;
+}
+nav ul li, .social li {
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li:nth-child(even) {
+    opacity: .3;
+}
+.clear {
+    clear: both;
+}
+.filters button {
+    font: 700 16px Lato, sans-serif;
+    color:  #3c4955;
+    text-align: left;
+    border-radius: 2px;
+    background-color:  #eaeaea;
+    height: 32px;
+    margin: 50px 5px;
+}
+.filters button:hover {
+    background-color:  #48bf72;
+    color: #fff;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.items li  {
+    display: block;
+    margin: 40px 0;
+}
+.item1 div,
+.item2 div,
+.item3 div,
+.item4 div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item1 a,
+.item2 a,
+.item3 a,
+.item4 a {
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 192, 110, 0.75);
+    width: 0;
+    border-radius: 10px;
+    font: 700 30px Lato, sans-serif;
+    height: 100%;
+}
+.item1:hover a,
+.item2:hover a,
+.item3:hover a,
+.item4:hover a {
+    width: 100%;
+}
+.item-name-small {
+    font: 400 16px Lato, sans-serif;
+    line-height: 30px;
+}
+.position-relative {
+    position: relative;
+}
+.item-name-big {
+    height: 80px;
+    width: 220px;
+    display: block;
+}
+.about {
+    background: url("../images/background-about.png") no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.resume {
+    text-align: left;
+    line-height: 32px;
+    width: 440px;
+}
+h4 {
+    font: 700 30px Lato, sans-serif;
+}
+h5 {
+    font: 400 22px Lato, sans-serif;
+}
+.resume p {
+    font: 400 16px Lato, sans-serif;
+    line-height: 25px;
+}
+.about button {
+    font: 700 14px  Lato, sans-serif ;
+    color:  #3c4955;
+    line-height: 25px;
+    text-transform: uppercase;
+    border: 2px solid #3c4955;
+    background-color: transparent;
+}
+.about button:hover, .about button:focus {
+    -webkit-box-shadow: 0 0 20px 0 rgba(60, 73, 85, 0.75);
+       -moz-box-shadow: 0 0 20px 0 rgba(60, 73, 85, 0.75);
+            box-shadow: 0 0 20px 0 rgba(60, 73, 85, 0.75);
+}
+.contacter p {
+    font: 400 26px BigJohn, sans-serif;
+    color: #48bf72;
+    line-height: 25px;
+}
+.contacter input, .contacter textarea  {
+    display: inline-block;
+    border: 2px solid #3c4955;
+    background-color:  #f1f1f1;
+    border-radius: 4px;
+    padding-left: 75px;
+	color: #3c4955;
+    background-position-y: -2px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+form {
+    width: 700px;
+    padding: 0;
+    margin: 0 auto;
+}
+.contacter input[type="text"] {
+    width: 49%;
+    height: 50px;
+    background-position-y: -2px;
+}
+.contacter textarea {
+    width: 100%;
+    height: 224px;
+    margin: 30px auto;
+    background: url(../images/background-message.png) no-repeat;
+	padding-top: 10px;
+	resize: none;
+
+}
+button[type="submit"] {
+     background-color:  #48bf72;
+     width: 100%;
+	 font: 700 14px Lato, sans-serif;
+	 line-height: 25px;
+	 height: 50px;
+	 text-transform: uppercase;
+	 border-radius: 3px;
+}
+input[placeholder="Votre nom"] {
+    background: url(../images/background-phone-number.png) no-repeat;
+}
+input[placeholder="Votre email"] {
+        background: url(../images/background-email.png) no-repeat;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+footer {
+    background-color: #3c4955;
+    margin-top: 50px;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+a {
+     transition: all .1s ease-in;
+}
+
+::-webkit-input-placeholder {
+    font: 700 16px Lato, sans-serif;
+    color:  #a6a5a5;
+    line-height: 25px;
+}
+::-moz-placeholder {
+    font: 700 16px Lato, sans-serif;
+    color:  #a6a5a5;
+    line-height: 25px;
+}
+:-moz-placeholder {
+    font: 700 16px Lato, sans-serif;
+    color:  #a6a5a5;
+    line-height: 25px;
+}
+:-ms-input-placeholder {
+    font: 700 16px Lato, sans-serif;
+    color:  #a6a5a5;
+    line-height: 25px;
+}
+.link-wrap {
+    font-size: 0;
+}
+.footer-copyright {
+    padding-top: 95px;
+    font: 400 16px Lato, sans-serif;
+    line-height: 25px; /* Приближение из-за подстановки шрифтов */
+}
+.email {
+    font-weight: 700;
+}
+.social {
+    padding-top: 75px;
+}
