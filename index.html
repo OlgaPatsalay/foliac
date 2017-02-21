@@ -41,34 +41,48 @@
                     <button>Illustration</button>
                     <button>Motion design</button>
                 </div>
-                <ul class="items float-left">
-                    <li class="item1">
-                        <div class="link-wrap">
-                            <a href="#"><div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span class="item-name-small">application mobile</span></span></div></a><img
-                                src="images/item1.png" alt="" width="450" height="302">
-                        </div>
-                    </li>
-                    <li class="item2">
-                        <div class="link-wrap">
-                            <a href="#"><div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span class="item-name-small">application mobile</span></span></div></a><img
-                                src="images/item2.png" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul class="items float-right">
-                    <li class="item3">
-                        <div class="link-wrap">
-                            <a href="#"><div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span class="item-name-small">application mobile</span></span></div></a><img
-                                src="images/item3.png" alt="">
-                        </div>
-                    </li>
-                    <li class="item4">
-                        <div class="link-wrap">
-                            <a href="#"><div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span class="item-name-small">application mobile</span></span></div></a><img
-                                src="images/item4.png" alt="">
-                        </div>
-                    </li>
-                </ul>
+                <div class="flex-cont">
+                    <ul class="items">
+                        <li class="item1">
+                            <div class="link-wrap">
+                                <a href="#">
+                                    <div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span
+                                            class="item-name-small">application mobile</span></span></div>
+                                </a><img
+                                    src="images/item1.png" alt="" width="450" height="302">
+                            </div>
+                        </li>
+                        <li class="item2">
+                            <div class="link-wrap">
+                                <a href="#">
+                                    <div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span
+                                            class="item-name-small">application mobile</span></span></div>
+                                </a><img
+                                    src="images/item2.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="items">
+                        <li class="item3">
+                            <div class="link-wrap">
+                                <a href="#">
+                                    <div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span
+                                            class="item-name-small">application mobile</span></span></div>
+                                </a><img
+                                    src="images/item3.png" alt="">
+                            </div>
+                        </li>
+                        <li class="item4">
+                            <div class="link-wrap">
+                                <a href="#">
+                                    <div class="position-relative"><span class="absolute-centering item-name-big">Forest app<br><span
+                                            class="item-name-small">application mobile</span></span></div>
+                                </a><img
+                                    src="images/item4.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="clear"></div>
             </div>
             <div class="about">
@@ -85,25 +99,26 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="contacter" >
-                    <p>Me contacter</p>
-                    <form action="">
-                        <input type="text" placeholder="Votre nom" maxlength="15" class="float-left">
-                        <input type="text" placeholder="Votre email" maxlength="50" class="float-right">
-						<div class="clear"></div>
-                        <textarea placeholder="Votre message"></textarea>
-                        <button type="submit">Envoyer</button>
-                    </form>
+            <div class="contacter">
+                <p>Me contacter</p>
+                <form action="" method="POST">
+                    <input type="text" placeholder="Votre nom" maxlength="15" class="float-left form-input-nom" required>
+                    <input type="text" placeholder="Votre email" maxlength="50" class="float-right form-input-email" required>
+                    <div class="clear"></div>
+                    <textarea placeholder="Votre message"></textarea>
+                    <button type="submit" class="form-btn-submit">Envoyer</button>
+                </form>
             </div>
         </main>
         <footer>
             <div class="footer-cont">
-                <div class="footer-copyright float-left">Copyright © 2015 by beneggen - <span class="email">www.beneggen.fr</span></div>
+                <div class="footer-copyright float-left">Copyright © 2015 by beneggen - <span
+                        class="email">www.beneggen.fr</span></div>
                 <ul class="social float-right">
-                    <li><img src="images/social-twitter.png"></li>
-                    <li><img src="images/social-polygon.png"></li>
-                    <li><img src="images/social-dribbble.png"></li>
-                    <li><img src="images/social-behance.png"></li>
+                    <li><a href="#"><img src="images/social-twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/social-polygon.png" alt="polygon"></a></li>
+                    <li><a href="#"><img src="images/social-dribbble.png" alt="dribbble"></a></li>
+                    <li><a href="#"><img src="images/social-behance.png" alt="behance"></a></li>
                 </ul>
             </div>
         </footer>

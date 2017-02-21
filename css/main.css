@@ -16,6 +16,7 @@
 }
 body {
     color: #fff;
+    min-width: 750px;
 }
 a, a:link, a:hover, a:active, a:visited {
     color: inherit;
@@ -30,10 +31,12 @@ button, button:hover, button:focus {
     outline: none;
 }
 header {
-    background: url(../images/background-header.jpg) no-repeat;
+    background-image: url(../images/background-header.jpg);
+    background-repeat: no-repeat;
     height: 650px;
     text-align: center;
     padding-top: 40px;
+    overflow: hidden;
 }
 .head, .portfolio, .resume-wrap, .contacter, .footer-cont {
     width: 60%;
@@ -77,7 +80,8 @@ header h2 {
     margin-left: auto;
     width: 170px;
 }
-header button:hover, header button:focus {
+header button:hover, header button:focus,
+.form-btn-submit:hover, .form-btn-submit:focus {
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
        -moz-box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
             box-shadow: 0 0 20px 0 rgba(0, 192, 110, 0.75);
@@ -103,9 +107,10 @@ nav ul {
     margin-bottom: 0;
     margin-top: 32px;
 }
-nav ul li, .social li {
+nav ul li {
     display: inline-block;
     margin-left: 40px;
+    cursor: pointer;
 }
 nav ul li:nth-child(even) {
     opacity: .3;
@@ -176,7 +181,8 @@ nav ul li:nth-child(even) {
     display: block;
 }
 .about {
-    background: url("../images/background-about.png") no-repeat;
+    background-image: url("../images/background-about.png");
+    background-repeat: no-repeat;
     background-position: center;
     height: 500px;
 }
@@ -234,17 +240,24 @@ form {
     width: 49%;
     height: 50px;
     background-position-y: -2px;
+    font: 700 16px Lato, sans-serif;
+    color:  #3c4955;
+    line-height: 25px;
+    padding-bottom: 5px;
 }
 .contacter textarea {
     width: 100%;
     height: 224px;
     margin: 30px auto;
-    background: url(../images/background-message.png) no-repeat;
+    background-image: url(../images/background-message.png);
+    background-repeat: no-repeat;
 	padding-top: 10px;
 	resize: none;
-
+    font: 700 16px Lato, sans-serif;
+    color: #3c4955;
+    line-height: 25px;
 }
-button[type="submit"] {
+.form-btn-submit {
      background-color:  #48bf72;
      width: 100%;
 	 font: 700 14px Lato, sans-serif;
@@ -253,11 +266,13 @@ button[type="submit"] {
 	 text-transform: uppercase;
 	 border-radius: 3px;
 }
-input[placeholder="Votre nom"] {
-    background: url(../images/background-phone-number.png) no-repeat;
+.form-input-nom {
+    background-image: url(../images/background-phone-number.png);
+    background-repeat: no-repeat;
 }
-input[placeholder="Votre email"] {
-        background: url(../images/background-email.png) no-repeat;
+.form-input-email {
+        background-image: url(../images/background-email.png);
+        background-repeat: no-repeat;
 }
 input:focus, textarea:focus {
     outline: none;
@@ -273,7 +288,6 @@ footer {
 a {
      transition: all .1s ease-in;
 }
-
 ::-webkit-input-placeholder {
     font: 700 16px Lato, sans-serif;
     color:  #a6a5a5;
@@ -300,11 +314,19 @@ a {
 .footer-copyright {
     padding-top: 95px;
     font: 400 16px Lato, sans-serif;
-    line-height: 25px; /* Приближение из-за подстановки шрифтов */
+    line-height: 25px;
 }
 .email {
     font-weight: 700;
 }
 .social {
     padding-top: 75px;
+}
+.social li {
+    display: inline-block;
+}
+.flex-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
